@@ -1,3 +1,5 @@
+import 'package:algorithm_ex/advance/can_place_flowers_605.dart';
+import 'package:algorithm_ex/advance/reverse_vowels_345.dart';
 import 'package:algorithm_ex/core/findthedifference_389.dart';
 import 'package:algorithm_ex/advance/gceof_str_1071.dart';
 import 'package:algorithm_ex/advance/kids_with_candies_1431.dart';
@@ -29,5 +31,9 @@ void main() {
   // 1431번 문제
   print(kidsWithCandies([4,2,1,1,2],1));  // [true, false, false, false, false]
 
+  // 605번 문제
+  print(canPlaceFlowers([1,0,0,0,1],2));  // false
 
+  // 345번 문제
+  print(reverseVowels("leetcode"));  // leotcede
 }
