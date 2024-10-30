@@ -1,26 +1,41 @@
 bool canPlaceFlowers(List<int> flowerbed, int n) {
-  var a = flowerbed.map((num) => num + 1).toList();
+  int len = flowerbed.length;
 
-  int p = 0;
-  while (p < a.length) {
-    if (n < 1) break;
+  if (n <= 0) return true;
 
-    if (a[p].isEven) {
-      p += 2;
-    } else {
-      if (a[p - 1].isOdd && a[p + 1].isOdd) {
-        a[p] = 2;
+  for (int i = 0; i < len; i++) {
+    if (i == 0) {
+      if (len == 1) {
+        if (flowerbed[i] == 0) {
+          flowerbed[i] = 1;
+          n--;
+          i++;
+        }
+      } else if (flowerbed[i] == 0 && flowerbed[i + 1] == 0) {
+        flowerbed[i] = 1;
         n--;
-        p += 2;
-      } else {
-        p++;
+        i++;
+      }
+    } else if (i > 0 && i + 1 < len) {
+      if (flowerbed[i] == 0) {
+        if (flowerbed[i - 1] == 0 && flowerbed[i + 1] == 0) {
+          flowerbed[i] = 1;
+          n--;
+          i++;
+        }
+      }
+    } else if (i == len - 1) {
+      if (flowerbed[i] == 0) {
+        if (flowerbed[i - 1] == 0) {
+          flowerbed[i] = 1;
+          n--;
+          i++;
+        }
       }
     }
+
+    if (n <= 0) return true;
   }
 
-  if (n < 1) {
-    return true;
-  } else {
-    return false;
-  }
+  return false;
 }

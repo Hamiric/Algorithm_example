@@ -1,6 +1,6 @@
 String gcdOfStrings(String str1, String str2) {
   if (str1 + str2 != str2 + str1) {
-    return '-1';
+    return '';
   }
 
   int gcd(int a, int b) {

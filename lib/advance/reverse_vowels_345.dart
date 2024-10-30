@@ -1,5 +1,5 @@
 String reverseVowels(String s) {
-  List<String> vowel = ['a', 'e', 'i', 'o', 'u'];
+  List<String> vowel = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
   List<int> index = [];
 
   var a = s.split('').toList();
