@@ -8,7 +8,7 @@ List<bool> kidsWithCandies(List<int> candies, int extraCandies) {
     }
   }
   
-  var pulscandies = candies.map((num)=>num+extraCandies).toList();
+  var pulscandies = candies.map((n)=>n+extraCandies).toList();
 
   for(int i = 0; i < pulscandies.length; i ++){
     if(pulscandies[i] < many){
