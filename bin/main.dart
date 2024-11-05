@@ -9,11 +9,12 @@ import 'package:algorithm_ex/advance/gceof_str_1071.dart';
 import 'package:algorithm_ex/advance/kids_with_candies_1431.dart';
 import 'package:algorithm_ex/core/is_anagram_242.dart';
 import 'package:algorithm_ex/core/is_monotonic_896.dart';
+import 'package:algorithm_ex/core/length_of_lastword_58.dart';
 import 'package:algorithm_ex/core/move_zeroes_283.dart';
 import 'package:algorithm_ex/core/puls_one_66.dart';
 import 'package:algorithm_ex/core/repeated_substring_pattern_459.dart';
+import 'package:algorithm_ex/core/roman_toint_13.dart';
 import 'package:algorithm_ex/core/str_str_28.dart';
-import 'package:algorithm_ex/test.dart';
 
 void main() {
   // Core 문제
@@ -42,7 +43,14 @@ void main() {
   print(canMakeArithmeticProgression([3,5,1]));  // true
 
   // 896번 문제
-  print(isMonotonic([1, 3, 2]));
+  print(isMonotonic([1, 3, 2]));  // false
+
+  // 13번 문제
+  print(romanToInt("MCMXCIV"));  // 1994
+
+  // 58번 문제
+  print(lengthOfLastWord("   fly me   to   the moon  "));
+
 
   print('\n//////////\n');
 
