@@ -63,4 +63,13 @@ void main() {
 
   // 643번 문제
   print(findMaxAverage([1,12,-5,-6,50,3],4));  // 12.75
+
+  // 724번 문제
+  print(pivotIndex([1, 7, 3, 6, 5, 6]));  // 3
+
+  // 1732번 문제
+  print(largestAltitude([-4,-3,-2,-1,4,3,2]));  // 0
+
+  // 2215번 문제
+  print(findDifference([1,2,3,3], [1,1,2,2]));  // [[3], []]
 }
