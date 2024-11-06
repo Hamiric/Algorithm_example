@@ -3,6 +3,7 @@ import 'package:algorithm_ex/advance/find_max_average_643.dart';
 import 'package:algorithm_ex/advance/is_subsequence_392.dart';
 import 'package:algorithm_ex/advance/reverse_vowels_345.dart';
 import 'package:algorithm_ex/core/array_sign_1822.dart';
+import 'package:algorithm_ex/core/cal_points_682.dart';
 import 'package:algorithm_ex/core/can_make_arithmetic_progression_1502.dart';
 import 'package:algorithm_ex/core/findthedifference_389.dart';
 import 'package:algorithm_ex/advance/gceof_str_1071.dart';
@@ -15,6 +16,7 @@ import 'package:algorithm_ex/core/puls_one_66.dart';
 import 'package:algorithm_ex/core/repeated_substring_pattern_459.dart';
 import 'package:algorithm_ex/core/roman_toint_13.dart';
 import 'package:algorithm_ex/core/str_str_28.dart';
+import 'package:algorithm_ex/core/to_lower_case_709.dart';
 
 void main() {
   // Core 문제
@@ -49,7 +51,13 @@ void main() {
   print(romanToInt("MCMXCIV"));  // 1994
 
   // 58번 문제
-  print(lengthOfLastWord("   fly me   to   the moon  "));
+  print(lengthOfLastWord("   fly me   to   the moon  "));  // 4
+
+  // 709번 문제
+  print(toLowerCase("LOVeLY"));  // lovely
+
+  // 682번 문제
+  print(calPoints(["5","-2","4","C","D","9","+","+"]));  // 27
 
 
   print('\n//////////\n');

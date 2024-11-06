@@ -1,37 +1,64 @@
 int romanToInt(String s) {
   var roma = s.split('').toList();
-  List<int> romantoint = [];
+  List<int> romanint = [];
   int sum = 0;
 
   for (int i = 0; i < roma.length; i++) {
     switch (roma[i]) {
       case 'I':
-        romantoint.add(1);
+        romanint.add(1);
       case 'V':
-        romantoint.add(5);
+        romanint.add(5);
       case 'X':
-        romantoint.add(10);
+        romanint.add(10);
       case 'L':
-        romantoint.add(50);
+        romanint.add(50);
       case 'C':
-        romantoint.add(100);
+        romanint.add(100);
       case 'D':
-        romantoint.add(500);
+        romanint.add(500);
       case 'M':
-        romantoint.add(1000);
+        romanint.add(1000);
     }
   }
 
-  for (int i = 0; i < romantoint.length; i++) {
-    if(i+1 == romantoint.length){
-      sum += romantoint[i];
+  for (int i = 0; i < romanint.length; i++) {
+    if (i + 1 == romanint.length) {
+      sum += romanint[i];
       break;
     }
 
-    if(romantoint[i+1] > romantoint[i]){
-      sum -= romantoint[i];
-    } else{
-      sum += romantoint[i];
+    if (romanint[i + 1] > romanint[i]) {
+      sum -= romanint[i];
+    } else {
+      sum += romanint[i];
+    }
+  }
+
+  return sum;
+}
+
+int romanToInt2(String s) {
+  var roma = s.split('').toList();
+  int sum = 0;
+  Map<String, int> romanMap = {
+    'I': 1,
+    'V': 5,
+    'X': 10,
+    'L': 50,
+    'C': 100,
+    'D': 500,
+    'M': 1000
+  };
+
+  for (int i = 0; i < roma.length; i++) {
+    int current = romanMap[roma[i]] ?? 0;
+    int next = (i + 1 < s.length) ? romanMap[s[i + 1]] ?? 0 : 0;
+
+    if (current < next) {
+      sum -= current;
+    } else {
+      sum += current;
     }
   }
 
