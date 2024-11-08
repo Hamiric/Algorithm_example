@@ -11,3 +11,5 @@ export 'package:algorithm_ex/core/repeated_substring_pattern_459.dart';
 export 'package:algorithm_ex/core/roman_toint_13.dart';
 export 'package:algorithm_ex/core/str_str_28.dart';
 export 'package:algorithm_ex/core/to_lower_case_709.dart';
+export 'package:algorithm_ex/core/judge_circle_657.dart';
+export 'package:algorithm_ex/core/tictactoe.1275.dart';

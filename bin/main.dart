@@ -1,6 +1,8 @@
 import 'package:algorithm_ex/core/core.dart';
 import 'package:algorithm_ex/advance/advance.dart';
 
+
+
 void main() {
   // Core 문제
   // 389번 문제
@@ -42,6 +44,11 @@ void main() {
   // 682번 문제
   print(calPoints(["5","-2","4","C","D","9","+","+"]));  // 27
 
+  // 657번 문제
+  print(judgeCircle("RRDDLUU"));  // false
+
+  // 1275번 문제
+  print(tictactoe([[0,0],[2,0],[1,1],[2,1],[2,2]]));
 
   print('\n//////////\n');
 
