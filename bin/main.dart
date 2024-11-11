@@ -48,7 +48,9 @@ void main() {
   print(judgeCircle("RRDDLUU"));  // false
 
   // 1275번 문제
-  print(tictactoe([[0,0],[2,0],[1,1],[2,1],[2,2]]));
+  print(tictactoe([[0,0],[2,0],[1,1],[2,1],[2,2]]));  // A
+
+  
 
   print('\n//////////\n');
 
