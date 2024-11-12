@@ -1,5 +1,6 @@
 import 'package:algorithm_ex/core/core.dart';
 import 'package:algorithm_ex/advance/advance.dart';
+import 'package:algorithm_ex/core/is_robot_bounded_1041.dart';
 
 
 
@@ -50,6 +51,8 @@ void main() {
   // 1275번 문제
   print(tictactoe([[0,0],[2,0],[1,1],[2,1],[2,2]]));  // A
 
+  // 1041번 문제
+  print(isRobotBounded("GGLLGG"));
   
 
   print('\n//////////\n');

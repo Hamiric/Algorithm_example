@@ -31,7 +31,7 @@ String tictactoe(List<List<int>> moves) {
   }
 
   for (int i = 0; i < gamesize; i++) {
-    // 가로일직선 승리
+    // 가로일직선 승리 
     if (gameboard[(gamesize * i)] == gameboard[(gamesize * i) + 1] &&
         gameboard[(gamesize * i) + 1] == gameboard[(gamesize * i) + 2] &&
         gameboard[(gamesize * i)] == gameboard[(gamesize * i) + 2]) {
