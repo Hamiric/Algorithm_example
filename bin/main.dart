@@ -1,8 +1,5 @@
 import 'package:algorithm_ex/core/core.dart';
 import 'package:algorithm_ex/advance/advance.dart';
-import 'package:algorithm_ex/core/is_robot_bounded_1041.dart';
-
-
 
 void main() {
   // Core 문제
@@ -52,7 +49,13 @@ void main() {
   print(tictactoe([[0,0],[2,0],[1,1],[2,1],[2,2]]));  // A
 
   // 1041번 문제
-  print(isRobotBounded("GGLLGG"));
+  print(isRobotBounded("GGLLGG"));  // true
+
+  // 1672번 문제
+  print(maximumWealth([[2,8,7],[7,1,3],[1,9,5]]));  // 17
+
+  // 1572번 문제
+  print(diagonalSum([[1,2,3],[4,5,6],[7,8,9]]));  // 25
   
 
   print('\n//////////\n');
