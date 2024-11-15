@@ -1,5 +1,8 @@
+import 'package:algorithm_ex/advance/product_except_self_238.dart';
+import 'package:algorithm_ex/advance/reverse_word_151.dart';
 import 'package:algorithm_ex/core/core.dart';
 import 'package:algorithm_ex/advance/advance.dart';
+import 'package:algorithm_ex/core/spiral_order_54.dart';
 
 void main() {
   // Core 문제
@@ -56,8 +59,10 @@ void main() {
 
   // 1572번 문제
   print(diagonalSum([[1,2,3],[4,5,6],[7,8,9]]));  // 25
-  
 
+  // 54번 문제
+  print(spiralOrder([[1,2,3,4],[5,6,7,8],[9,10,11,12]]));  // [1,2,3,4,8,12,11,10,9,5,6,7]
+  
   print('\n//////////\n');
 
   // Advance 문제
@@ -87,4 +92,10 @@ void main() {
 
   // 2215번 문제
   print(findDifference([1,2,3,3], [1,1,2,2]));  // [[3], []]
+
+  // 151번 문제
+  print(reverseWords("the sky is blue"));  // blue is sky the
+
+  // 238번 문제
+  print(productExceptSelf([-1,1,0,-3,3]));  // [0,0,9,0,0]
 }
