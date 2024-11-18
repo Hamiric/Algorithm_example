@@ -1,10 +1,12 @@
-import 'package:algorithm_ex/advance/product_except_self_238.dart';
-import 'package:algorithm_ex/advance/reverse_word_151.dart';
+
 import 'package:algorithm_ex/core/core.dart';
 import 'package:algorithm_ex/advance/advance.dart';
-import 'package:algorithm_ex/core/spiral_order_54.dart';
+
 
 void main() {
+  // 향후 복습이 필요한 문제는 * 표시
+  // 1복습단계 *, 2복습단계 ** 이런식으로
+
   // Core 문제
   // 389번 문제
   print(findTheDifference('sadb','sagdb'));  // g
@@ -62,6 +64,12 @@ void main() {
 
   // 54번 문제
   print(spiralOrder([[1,2,3,4],[5,6,7,8],[9,10,11,12]]));  // [1,2,3,4,8,12,11,10,9,5,6,7]
+
+  // 73번 문제
+  List<List<int>> matrix73 = [[0,1,2,0],[3,4,5,2],[1,3,1,5]];
+  setZeroes(matrix73);
+  print(matrix73);  // [[0, 0, 0, 0], [0, 4, 5, 0], [0, 3, 1, 0]]
+
   
   print('\n//////////\n');
 
@@ -98,4 +106,29 @@ void main() {
 
   // 238번 문제
   print(productExceptSelf([-1,1,0,-3,3]));  // [0,0,9,0,0]
+
+  // 1207번 문제
+  print(uniqueOccurrences([-3,0,1,-3,1,1,1,-3,10,0]));  // true
+
+  // 933번 문제 *
+  RecentCounter recentCounter = RecentCounter();
+  // 1, 2, 3, 3
+  print('${recentCounter.ping(1)}, ${recentCounter.ping(100)}, ${recentCounter.ping(3001)}, ${recentCounter.ping(3002)}');
+
+  // 206번 문제 *
+  ListNode head = ListNode(5);
+  reverseList(head);
+
+  // 334번 문제 *
+  print(increasingTriplet([2, 1, 5, 0, 4, 6]));  // true
+
+  // 11번 문제 *
+  print(maxArea([1,8,6,2,5,4,8,3,7]));  // 49
+
+  // 104번 문제 *
+  TreeNode root = TreeNode(3);
+  print(maxDepth(root));  // 1
+
+  // 443번 문제 *
+  print(compress(["a", "a", "b", "b", "c", "c", "c"]));
 }

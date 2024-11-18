@@ -16,3 +16,5 @@ export 'package:algorithm_ex/core/tictactoe.1275.dart';
 export 'package:algorithm_ex/core/is_robot_bounded_1041.dart';
 export 'package:algorithm_ex/core/maximum_wealth_1672.dart';
 export 'package:algorithm_ex/core/diagonal_sum_1572.dart';
+export 'package:algorithm_ex/core/spiral_order_54.dart';
+export 'package:algorithm_ex/core/set_zeroes_73.dart';
