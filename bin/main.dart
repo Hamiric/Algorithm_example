@@ -140,4 +140,15 @@ void main() {
 */
   // 443번 문제 *
   print(compress(["a", "a", "b", "b", "c", "c", "c"]));
+
+  // 1137번 문제
+  print(tribonacci(6)); // 13
+
+  // 2390번 문제
+  print(removeStars('ab*cd**ef'));  // aef
+
+  // 872번 문제
+  TreeNode root1 = TreeNode(3);
+  TreeNode root2 = TreeNode(5);
+  print(leafSimilar(root1, root2));  // false
 }

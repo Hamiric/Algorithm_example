@@ -1,8 +1,4 @@
-class ListNode {
-  int val;
-  ListNode? next;
-  ListNode([this.val = 0, this.next]);
-}
+import 'advance.dart';
 
 ListNode? reverseList(ListNode? head) {
   ListNode? prev = null;
