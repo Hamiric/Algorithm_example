@@ -73,8 +73,10 @@ void main() {
   // 1491번 문제
   print(average([4000, 3000, 1000, 2000]));  // 2500.00000
 
+  // 860번 문제
   print(lemonadeChange([5,5,10,10,20]));  // false
 
+  // 976번 문제
   print(largestPerimeter([6, 3, 3, 2]));  // 8
 
   print('\n//////////\n');
