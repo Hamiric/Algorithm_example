@@ -1,4 +1,3 @@
-
 import 'package:algorithm_ex/core/core.dart';
 import 'package:algorithm_ex/advance/advance.dart';
 
@@ -7,6 +6,7 @@ void main() {
   // 향후 복습이 필요한 문제는 * 표시
   // 1복습단계 *, 2복습단계 ** 이런식으로
 
+/*
   // Core 문제
   // 389번 문제
   print(findTheDifference('sadb','sagdb'));  // g
@@ -65,14 +65,21 @@ void main() {
   // 54번 문제
   print(spiralOrder([[1,2,3,4],[5,6,7,8],[9,10,11,12]]));  // [1,2,3,4,8,12,11,10,9,5,6,7]
 
-  // 73번 문제
+  // 73번 문제 *
   List<List<int>> matrix73 = [[0,1,2,0],[3,4,5,2],[1,3,1,5]];
   setZeroes(matrix73);
   print(matrix73);  // [[0, 0, 0, 0], [0, 4, 5, 0], [0, 3, 1, 0]]
+*/
+  // 1491번 문제
+  print(average([4000, 3000, 1000, 2000]));  // 2500.00000
 
-  
+  print(lemonadeChange([5,5,10,10,20]));  // false
+
+  print(largestPerimeter([6, 3, 3, 2]));  // 8
+
   print('\n//////////\n');
 
+/*
   // Advance 문제
   // 1071번 문제
   print(gcdOfStrings('ABC','ABCABC'));  // ABC
@@ -128,7 +135,7 @@ void main() {
   // 104번 문제 *
   TreeNode root = TreeNode(3);
   print(maxDepth(root));  // 1
-
+*/
   // 443번 문제 *
   print(compress(["a", "a", "b", "b", "c", "c", "c"]));
 }

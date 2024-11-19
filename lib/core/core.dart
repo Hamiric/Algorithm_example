@@ -18,3 +18,6 @@ export 'package:algorithm_ex/core/maximum_wealth_1672.dart';
 export 'package:algorithm_ex/core/diagonal_sum_1572.dart';
 export 'package:algorithm_ex/core/spiral_order_54.dart';
 export 'package:algorithm_ex/core/set_zeroes_73.dart';
+export 'package:algorithm_ex/core/largest_perimeter_976.dart';
+export 'package:algorithm_ex/core/lemonage_change_860.dart';
+export 'package:algorithm_ex/core/average_salary_1491.dart';
