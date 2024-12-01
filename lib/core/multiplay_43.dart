@@ -1,4 +1,14 @@
-String test(String num1, String num2) {
+String multiply(String num1, String num2) {
+  BigInt num1BigInt = BigInt.parse(num1);
+  BigInt num2BigInt = BigInt.parse(num2);
+
+  String multiBigInt = (num1BigInt * num2BigInt).toString();
+
+  print(multiBigInt);
+
+  return multiBigInt;
+}
+
   // num1 의 i 번째 자리와, num2의 j 번째 자리를 곱하면, i + j 와 i + j + 1 인덱스에 영향을 미침
   // 21 , 13 예시 > 273
 
@@ -14,6 +24,9 @@ String test(String num1, String num2) {
 
   // num1의 1번쨰자리 => 1, num2의 1번째 자리 = 3
   // 27[3]
+
+/*
+String multiply(String num1, String num2) {
 
   int num1len = num1.length;
   int num2len = num2.length;
@@ -36,7 +49,4 @@ String test(String num1, String num2) {
 
   return firstNonZero == -1 ? "0" : resultStr.substring(firstNonZero);
 }
-
-void main() {
-  print(test("2", "3"));
-}
+*/

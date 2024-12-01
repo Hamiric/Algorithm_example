@@ -1,6 +1,6 @@
+import 'package:algorithm_ex/class.dart';
 import 'package:collection/collection.dart';
 
-import 'advance.dart';
 
 bool leafSimilar(TreeNode? root1, TreeNode? root2) {
   List<int> root1lastNodeVal = [];

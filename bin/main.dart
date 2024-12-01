@@ -1,3 +1,5 @@
+
+import 'package:algorithm_ex/class.dart';
 import 'package:algorithm_ex/core/core.dart';
 import 'package:algorithm_ex/advance/advance.dart';
 
@@ -69,7 +71,7 @@ void main() {
   List<List<int>> matrix73 = [[0,1,2,0],[3,4,5,2],[1,3,1,5]];
   setZeroes(matrix73);
   print(matrix73);  // [[0, 0, 0, 0], [0, 4, 5, 0], [0, 3, 1, 0]]
-*/
+
   // 1491번 문제
   print(average([4000, 3000, 1000, 2000]));  // 2500.00000
 
@@ -78,6 +80,17 @@ void main() {
 
   // 976번 문제
   print(largestPerimeter([6, 3, 3, 2]));  // 8
+*/
+  // 1232번 문제
+  print(checkStraightLine([[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]));  // true
+
+  // 67번 문제
+  print(addBinary('1010', '1011'));  // 10101
+
+  // 43번 문제
+  print(multiply('123', '456'));  // 56088
+
+  
 
   print('\n//////////\n');
 
@@ -137,7 +150,7 @@ void main() {
   // 104번 문제 *
   TreeNode root = TreeNode(3);
   print(maxDepth(root));  // 1
-*/
+
   // 443번 문제 *
   print(compress(["a", "a", "b", "b", "c", "c", "c"]));
 
@@ -151,4 +164,15 @@ void main() {
   TreeNode root1 = TreeNode(3);
   TreeNode root2 = TreeNode(5);
   print(leafSimilar(root1, root2));  // false
+*/
+  // 338번 문제 *
+  print(countBits(15));  // [0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2, 3, 2, 3, 3, 4]
+
+  // 136번 문제 *
+  print(singleNumber([4,1,2,1,2]));  // 4
+
+  // 700번 문제
+  TreeNode root1 = TreeNode(3);
+  print(searchBST(root1, 3));  // [3]
+
 }

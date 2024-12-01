@@ -1,7 +1,7 @@
 double average(List<int> salary) {
 
-  int maxSalary = salary[0];
-  int minSalary = salary[0];
+  int maxSalary = 1000;
+  int minSalary = 1000000;
   int sumSalary = 0;
   int idxSalary = salary.length;
 

@@ -1,4 +1,4 @@
-import 'advance.dart';
+import 'package:algorithm_ex/class.dart';
 
 int maxDepth(TreeNode? root) {
 

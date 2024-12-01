@@ -1,4 +1,4 @@
-import 'advance.dart';
+import 'package:algorithm_ex/class.dart';
 
 ListNode? reverseList(ListNode? head) {
   ListNode? prev = null;
